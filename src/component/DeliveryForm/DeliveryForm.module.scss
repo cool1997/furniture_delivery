@@ -1,0 +1,229 @@
+.DeliveryForm {
+  display: flex;
+  flex-direction: column;
+
+  // background-image: url(../../assets/img/mane_page.png);
+  
+  & .title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #606F7A;
+    margin-bottom: 48px;
+  }
+
+  & .containerForm {
+    display: flex;
+    margin-bottom: 24px;
+    
+    & .containerFields {
+      display: flex;
+      
+      margin-right: 12px;
+      
+      & .containerItem {
+        display: flex;
+        flex-direction: column;
+  
+        &:first-child {
+          & .containerField {
+            & .field {
+              border: none;
+              border-radius: 3px 0 0 3px;
+            }
+          }
+        }
+
+        &:last-child {
+          & .containerField {
+            & .field {
+              border-radius: 0 3px 3px 0;
+            }
+          }
+        }
+
+        & .label {
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 15px;
+          text-align: left;
+          letter-spacing: 0.2px;
+          color: #B7B7B7;
+
+          padding-left: 2px;
+          margin-bottom: 12px;
+        }
+
+        & .containerField {
+          padding: 10px 0;
+          background-color: #fff;
+
+          & .field {
+            width: calc(100%);
+            height: 47px;
+            padding: 0;
+  
+            background-color: transparent;
+            border: none;
+            border-left: 1px solid #DEDEDE;
+  
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 15px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #606F7A;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    & .btnSend {
+      align-self: flex-end;
+
+      background: #5DAAFF;
+      box-shadow: 0px 4px 40px rgba(93, 170, 255, 0.29);
+      border: none;
+      border-radius: 3px;
+
+      padding: 25px 39px;
+      padding-right: 73px;
+
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 17px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+    }
+  }
+
+  & .btnHelp {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.2px;
+    color: #5DAAFF;
+
+    align-self: flex-start;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(93, 170, 255, 0.1);
+    border: none;
+    border-radius: 3px;
+
+    padding: 20px;
+    padding-right: 43px;
+  }
+
+  &.filled {
+    & .btnHelp {
+      align-self: flex-end;
+      transform: translateY(-157px);
+    }
+  }
+}
+
+
+// .DeliveryForm {
+//   position: relative;
+
+//   & .title {
+//     font-family: 'Open Sans', sans-serif;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 48px;
+//     line-height: 64px;
+//     letter-spacing: -1px;
+//     color: #606F7A;
+//     margin-bottom: 48px;
+//   }
+
+//   & .containerForm {
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: flex-end;
+//     display: grid;
+//     grid-template: 
+//       'label ...'
+//       'field btnSend';
+
+//     & .containerLabel {
+//       grid-area: label;
+
+//       display: grid;
+//       grid-auto-flow: column;
+//       justify-items: start;
+
+//       & .label {
+
+//         font-family: 'Roboto', sans-serif;
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 15px;
+//         line-height: 15px;
+//         text-align: center;
+//         letter-spacing: 0.2px;
+
+//         color: #B7B7B7;
+//       }
+//     }
+
+//     & .containerFields {
+//       grid-area: field;
+
+//       display: grid;
+//       grid-auto-flow: column;
+//       margin-right: 12px;     
+//       padding: 10px;
+      
+//       background: #FFFFFF;
+//       box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.04);
+//       border-radius: 3px;
+
+//       & .containerField {
+//         & .field {  
+//           font-family: 'Roboto', sans-serif;
+//           font-style: normal;
+//           font-weight: 500;
+//           font-size: 15px;
+//           line-height: 15px;
+//           text-align: center;
+//           letter-spacing: 0.2px;
+//           color: #606F7A;
+//         }
+//       }
+//     }
+
+//     & .btnSend {
+//       grid-area: btnSend;
+//     }
+
+//   }
+//   & .btnHelp {
+//     position: absolute;
+//     left: 0;
+//   }
+
+//   &.filled {
+
+//     & .btnHelp {
+//       left: auto;
+//       right: 0;
+//     }
+//   }
+// }

@@ -1,0 +1,55 @@
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template: 
+    'header' 140px
+    'main' 1fr;
+
+  padding: 0 97px;
+
+  background: #EFF3F9;
+
+  &.mainPage {
+    background-image: url(../assets/img/mane_page.png);
+  }
+
+  & .header {
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logoImg{
+      
+    }
+    & .contactsLink {
+      width: 132px;
+      height: 45px;
+
+      background: #FFFFFF;
+      box-shadow: 0px 4px 40px rgba(46, 80, 87, 0.12);
+      border-radius: 3px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 17px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.2px;
+
+      color: #606F7A;
+    }
+  }
+
+  & .main {
+    display: grid;
+    grid-area: main;
+  }
+}

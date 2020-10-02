@@ -1,0 +1,83 @@
+:root {
+	--font_main_color: #000000;
+	--font_light_color: #666666;
+	--font_contrast_color: #ffffff;
+
+	--main_color: #f2f2f2;
+	--light_color: #dddddd;
+	--theme_color: #eeeeee;
+	--success_color: #009900;
+	--danger_color: #990000;
+	--accent_color: #2a5cff;
+
+
+	--contrast_color: #333333;
+	--contrast_hover_color: #2ea8e6;
+
+
+	--big_padding: 50px;
+	--middle_padding: 25px;
+	--small_padding: 15px;
+	--extra_small_padding: 5px;
+
+
+	--big_font_size: 20px;
+	--middle_font_size: 15px;
+	--small_font_size: 10px;
+
+
+	/* Colors */
+
+	--white: #fff;
+	--gray_100: #f8f9fa;
+	--gray_200: #e9ecef;
+	--gray_300: #dee2e6;
+	--gray_400: #ced4da;
+	--gray_500: #adb5bd;
+	--gray_600: #6c757d;
+	--gray_700: #495057;
+	--gray_800: #343a40;
+	--gray_900: #212529;
+	--black: #000;
+
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+
+	--main: var(--gray_100);
+	--contrast: var(--gray_700);
+	--primary: var(--blue);
+	--secondary: var(--gray_600);
+	--success: var(--green);
+	--info: var(--cyan);
+	--warning: var(--yellow);
+	--danger: var(--red);
+	--light: var(--gray_200);
+	--middle: var(--gray_300);
+	--dark: var(--gray_400);
+
+
+	/* size */
+
+	--size_s: 5px;
+	--size_s_double: calc(var(--size_s) * 2);
+	--size_s_third: calc(var(--size_s) * 3);
+	--size_s_half: calc(var(--size_s) / 2);
+
+	--size_m: 10px;
+	--size_m_double: calc(var(--size_m) * 2);
+	--size_m_third: calc(var(--size_m) * 3);
+	--size_m_half: calc(var(--size_m) / 2);
+
+	--size_l: 20px;
+	--size_l_double: calc(var(--size_l) * 2);
+	--size_l_third: calc(var(--size_l) * 3);
+	--size_l_half: calc(var(--size_l) / 2);
+}

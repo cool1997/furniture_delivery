@@ -1,0 +1,123 @@
+.Contacts {
+  display: grid;
+  grid-template: 
+    'title title' auto
+    'left  right' 1fr
+    / 1fr 1fr;
+
+  & .title {
+    grid-area: title;
+
+    margin-bottom: 72px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #606F7A;
+  }
+
+  & .secondTitle {
+    margin-bottom: 48px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    color: #606F7A;
+  }
+  
+  & .containerLeft {
+    grid-area: left;
+
+    & .table {
+      margin-bottom: 72px;
+
+      & .tableBody {
+        & .tableRow {
+          display: block;
+          margin-bottom: 32px;
+          
+          & .tableCell {
+            min-width: 160px;
+                  
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 23px;
+            letter-spacing: 0.2px;
+            color: #606F7A; 
+          }
+        }
+      }
+    }
+    & .socialList {
+      display: grid;
+      grid-template: 1fr 1fr/ 1fr 1fr;
+      justify-content: space-between;
+
+
+      & .item {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 52px;
+
+        & .socialName {
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 23px;
+          line-height: 23px;
+          letter-spacing: 0.2px;
+          color: #606F7A; 
+        }
+
+        & .socialLogoImg {
+          width: 50px;
+          height: 50px;
+          background-color: #000;
+          margin-right: 24px;
+
+          border-radius: 8px;
+
+          &.Instagram {
+            background: linear-gradient(49.12deg, #FFDD55 6.62%, #FF543E 50.06%, #C837AB 93.5%);
+          }
+          &.Facebook {
+            background: #475993;
+          }
+          &.Whatsapp {
+            background: #7AD06D;
+          }
+          &.WeChat {
+            background: linear-gradient(180deg, #03DC6B 0%, #06C462 100%);
+          }
+        }
+      }
+    }
+  }
+  
+  & .containerRight {
+    grid-area: right;
+    display: grid;
+    grid-template: 1fr auto / 1fr;
+
+    & .btnBack {
+      justify-self: end;
+
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 23px;
+      letter-spacing: 0.2px;
+      color: #5DAAFF; 
+    }
+  }
+}

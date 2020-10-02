@@ -1,0 +1,84 @@
+.ContactsForm {
+  & .containerField {
+    display: grid;
+    grid-gap: 10px;
+    grid-template: auto / 1fr 1fr;
+
+    & .field {
+      border: none;
+      padding: 19px;
+  
+      line-height: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 15px;
+      letter-spacing: 0.2px;
+
+      &::placeholder {
+        color: #B7B7B7;
+      }
+  
+      &:last-child {
+        margin-bottom: 48px;
+      }
+    }
+  }
+  
+  & .fieldArea {
+    width: 100%;
+    height: 124px;
+    margin-bottom: 20px;
+
+    resize: none;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+    border: none;
+    border-radius: 3px;
+  }
+
+  & .areaDesc {
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    color: #606F7A;
+  }
+
+  & .btnContact {
+    padding: 19px 31px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    background: #5DAAFF;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    color: #FCFDFF;
+  }
+
+  & .personalData {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #B7B7B7;
+
+    & .personalDataLink {
+      color: #606F7A;
+    }
+  }  
+}
